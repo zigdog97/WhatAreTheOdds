@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="M1C-5x-3YF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Would You Rather-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="WouldYouRather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +15,254 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBm-4Q-c0G">
+                                <rect key="frame" x="214" y="172" width="173" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1tl-Zh-UpW"/>
+                                    <constraint firstAttribute="width" constant="173" id="9PL-vC-mfv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                <state key="normal" title="Single Player">
+                                    <color key="titleColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bGr-rb-48W" kind="show" id="wUW-I8-VD6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFW-Xs-vHT">
+                                <rect key="frame" x="214" y="260" width="173" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="i0A-Xp-JID"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                <state key="normal" title="Multiplayer">
+                                    <color key="titleColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7xa-1Q-0u1" kind="show" id="ozj-Ka-6QS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w99-sj-kwZ">
+                                <rect key="frame" x="214" y="348" width="173" height="80"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                <state key="normal" title="CPU">
+                                    <color key="titleColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="7h2-OT-nVi" kind="show" id="wEg-dF-fOy"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jv-Nt-2BD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53663725819999997" green="0.13804482069999999" blue="0.63214172980000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                    <color key="textColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Would You Rather" id="lqG-mj-3Xr"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="w99-sj-kwZ" secondAttribute="bottom" constant="172" id="8tV-yT-tom"/>
+                            <constraint firstItem="4jv-Nt-2BD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="HWZ-Gz-Ybx"/>
+                            <constraint firstAttribute="trailing" secondItem="4jv-Nt-2BD" secondAttribute="trailing" id="Iqq-PJ-Xw8"/>
+                            <constraint firstItem="4jv-Nt-2BD" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Sq2-X5-s7w"/>
+                            <constraint firstItem="w99-sj-kwZ" firstAttribute="leading" secondItem="zFW-Xs-vHT" secondAttribute="leading" id="dv5-em-dVU"/>
+                            <constraint firstItem="zFW-Xs-vHT" firstAttribute="trailing" secondItem="w99-sj-kwZ" secondAttribute="trailing" id="gRB-jC-Pjd"/>
+                            <constraint firstItem="zFW-Xs-vHT" firstAttribute="top" secondItem="yBm-4Q-c0G" secondAttribute="bottom" constant="8" symbolic="YES" id="iwb-zL-sAu"/>
+                            <constraint firstItem="yBm-4Q-c0G" firstAttribute="centerX" secondItem="4jv-Nt-2BD" secondAttribute="centerX" id="niX-gr-TVy"/>
+                            <constraint firstItem="zFW-Xs-vHT" firstAttribute="trailing" secondItem="yBm-4Q-c0G" secondAttribute="trailing" id="oeH-Pm-Kw3"/>
+                            <constraint firstItem="w99-sj-kwZ" firstAttribute="top" secondItem="zFW-Xs-vHT" secondAttribute="bottom" constant="8" symbolic="YES" id="ouV-88-L2m"/>
+                            <constraint firstItem="zFW-Xs-vHT" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="yqm-Ju-C46"/>
+                            <constraint firstItem="yBm-4Q-c0G" firstAttribute="leading" secondItem="zFW-Xs-vHT" secondAttribute="leading" id="zpe-2K-5xg"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Would You Rather" id="Uer-zx-avO">
+                        <barButtonItem key="rightBarButtonItem" id="hUA-T6-ahm"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1119" y="1005"/>
+        </scene>
+        <!--CPU-->
+        <scene sceneID="If0-e2-ATk">
+            <objects>
+                <viewController title="CPU" id="7h2-OT-nVi" customClass="CPUVC" customModule="WouldYouRather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L5j-nY-nz2"/>
+                        <viewControllerLayoutGuide type="bottom" id="KpR-wv-0I8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a5K-04-49L">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KhQ-Kl-Uqb">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53663725819999997" green="0.13804482069999999" blue="0.63214172980000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                    <color key="textColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="CPU" id="qNX-r7-YYU"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="KhQ-Kl-Uqb" firstAttribute="top" secondItem="a5K-04-49L" secondAttribute="top" id="2eQ-Al-VeF"/>
+                            <constraint firstAttribute="trailing" secondItem="KhQ-Kl-Uqb" secondAttribute="trailing" id="N9o-4N-30D"/>
+                            <constraint firstItem="KhQ-Kl-Uqb" firstAttribute="leading" secondItem="a5K-04-49L" secondAttribute="leading" id="nKZ-XS-kYt"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSR-GR-lru" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1303" y="1836"/>
+        </scene>
+        <!--Single Player-->
+        <scene sceneID="Jcb-TU-E3o">
+            <objects>
+                <viewController title="Single Player" id="bGr-rb-48W" customClass="MyViewController2ViewController" customModule="WouldYouRather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qjj-t3-s8y"/>
+                        <viewControllerLayoutGuide type="bottom" id="RZG-cv-ont"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="q5d-Pr-HOl">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAU-mw-WH1">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53663725819999997" green="0.13804482069999999" blue="0.63214172980000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                    <color key="textColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Single Player" id="osZ-LK-xgf"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 in :" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5v-kr-Htw">
+                                <rect key="frame" x="164" y="275" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Ebx-ci-rNH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                <color key="textColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JPu-3Q-C5w">
+                                <rect key="frame" x="252" y="285" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="OyJ-N9-RC4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBq-DC-44R">
+                                <rect key="frame" x="250" y="323" width="100" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="WTh-FU-h9b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="VBq-DC-44R" firstAttribute="centerX" secondItem="JPu-3Q-C5w" secondAttribute="centerX" id="27p-TY-xS8"/>
+                            <constraint firstItem="HAU-mw-WH1" firstAttribute="top" secondItem="q5d-Pr-HOl" secondAttribute="top" id="2pV-NG-Pna"/>
+                            <constraint firstItem="VBq-DC-44R" firstAttribute="top" secondItem="Y5v-kr-Htw" secondAttribute="bottom" constant="-2" id="7WI-oF-jlJ"/>
+                            <constraint firstItem="JPu-3Q-C5w" firstAttribute="centerY" secondItem="q5d-Pr-HOl" secondAttribute="centerY" id="7aG-ba-hFM"/>
+                            <constraint firstItem="VBq-DC-44R" firstAttribute="top" secondItem="JPu-3Q-C5w" secondAttribute="bottom" constant="8" id="a0w-j1-h26"/>
+                            <constraint firstItem="JPu-3Q-C5w" firstAttribute="centerY" secondItem="Y5v-kr-Htw" secondAttribute="centerY" id="aoe-vM-arz"/>
+                            <constraint firstItem="JPu-3Q-C5w" firstAttribute="leading" secondItem="Y5v-kr-Htw" secondAttribute="trailing" constant="8" symbolic="YES" id="avL-3E-5PE"/>
+                            <constraint firstItem="HAU-mw-WH1" firstAttribute="leading" secondItem="q5d-Pr-HOl" secondAttribute="leading" id="leM-XS-msd"/>
+                            <constraint firstItem="HAU-mw-WH1" firstAttribute="centerX" secondItem="VBq-DC-44R" secondAttribute="centerX" id="rNW-u2-vYP"/>
+                            <constraint firstItem="RZG-cv-ont" firstAttribute="top" secondItem="VBq-DC-44R" secondAttribute="bottom" constant="197" id="rl4-4f-Hhb"/>
+                            <constraint firstAttribute="trailing" secondItem="HAU-mw-WH1" secondAttribute="trailing" id="wwG-3l-ZJm"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="edM-rw-7P0"/>
+                    </toolbarItems>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDU-mM-FOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958" y="377"/>
+        </scene>
+        <!--Multiplayer-->
+        <scene sceneID="XyE-iJ-lsp">
+            <objects>
+                <viewController title="Multiplayer" id="7xa-1Q-0u1" customClass="MultiplayerVC" customModule="WouldYouRather" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kjq-Zi-1NZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="fgZ-Pg-gmh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1dJ-HV-CzD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1eb-mE-x7N">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.53663725819999997" green="0.13804482069999999" blue="0.63214172980000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="24"/>
+                                    <color key="textColor" red="0.88698399610000001" green="0.91475299870000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Multiplayer" id="M2t-4H-PKp"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="1eb-mE-x7N" secondAttribute="trailing" id="B9O-VP-rLe"/>
+                            <constraint firstItem="1eb-mE-x7N" firstAttribute="top" secondItem="1dJ-HV-CzD" secondAttribute="top" id="smt-Th-afr"/>
+                            <constraint firstItem="1eb-mE-x7N" firstAttribute="leading" secondItem="1dJ-HV-CzD" secondAttribute="leading" id="y5T-uB-GMB"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QpS-yq-mKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2000" y="1198"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rM2-E4-8Tp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M1C-5x-3YF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S1m-mg-HpD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ORD-Il-opT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCa-Ay-4sK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="-338"/>
         </scene>
     </scenes>
 </document>

@@ -13,6 +13,9 @@
 		C4B52AB31B95EBDB007A8D1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B52AB21B95EBDB007A8D1C /* Images.xcassets */; };
 		C4B52AB61B95EBDB007A8D1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B52AB41B95EBDB007A8D1C /* LaunchScreen.xib */; };
 		C4B52AC21B95EBDB007A8D1C /* WouldYouRatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B52AC11B95EBDB007A8D1C /* WouldYouRatherTests.swift */; };
+		C4BABC241B97EEE200ED9E9C /* MyViewController2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */; };
+		C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */; };
+		C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		C4B52ABB1B95EBDB007A8D1C /* WouldYouRatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WouldYouRatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B52AC01B95EBDB007A8D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B52AC11B95EBDB007A8D1C /* WouldYouRatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WouldYouRatherTests.swift; sourceTree = "<group>"; };
+		C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController2ViewController.swift; sourceTree = "<group>"; };
+		C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
+		C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,9 @@
 			children = (
 				C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */,
 				C4B52AAD1B95EBDB007A8D1C /* ViewController.swift */,
+				C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */,
+				C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */,
+				C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */,
 				C4B52AAF1B95EBDB007A8D1C /* Main.storyboard */,
 				C4B52AB21B95EBDB007A8D1C /* Images.xcassets */,
 				C4B52AB41B95EBDB007A8D1C /* LaunchScreen.xib */,
@@ -213,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B52AAE1B95EBDB007A8D1C /* ViewController.swift in Sources */,
+				C4BABC241B97EEE200ED9E9C /* MyViewController2ViewController.swift in Sources */,
 				C4B52AAC1B95EBDB007A8D1C /* AppDelegate.swift in Sources */,
+				C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */,
+				C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +421,7 @@
 				C4B52AC71B95EBDB007A8D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4B52AC81B95EBDB007A8D1C /* Build configuration list for PBXNativeTarget "WouldYouRatherTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +430,7 @@
 				C4B52ACA1B95EBDB007A8D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

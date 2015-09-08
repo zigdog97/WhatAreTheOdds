@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
+//  MyViewController2ViewController.swift
 //  WouldYouRather
 //
-//  Created by zach bundarin on 9/1/15.
+//  Created by zach bundarin on 9/2/15.
 //  Copyright (c) 2015 Zach Bundarin. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyViewController2ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,7 +21,5 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func toSinglePlayerVC(sender: UIButton) {
-    }
-}
 
+}
