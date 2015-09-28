@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C44AFA701BAB2646002813C6 /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */; };
+		C44AFA721BAB2E14002813C6 /* SPaskquestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */; };
+		C4AD96A11BB03B4D00587C71 /* SPRangeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */; };
+		C4AD96A31BB040BE00587C71 /* SPGuessSelectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */; };
 		C4B52AAC1B95EBDB007A8D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */; };
 		C4B52AAE1B95EBDB007A8D1C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B52AAD1B95EBDB007A8D1C /* ViewController.swift */; };
 		C4B52AB11B95EBDB007A8D1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B52AAF1B95EBDB007A8D1C /* Main.storyboard */; };
 		C4B52AB31B95EBDB007A8D1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B52AB21B95EBDB007A8D1C /* Images.xcassets */; };
 		C4B52AB61B95EBDB007A8D1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4B52AB41B95EBDB007A8D1C /* LaunchScreen.xib */; };
 		C4B52AC21B95EBDB007A8D1C /* WouldYouRatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B52AC11B95EBDB007A8D1C /* WouldYouRatherTests.swift */; };
-		C4BABC241B97EEE200ED9E9C /* MyViewController2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */; };
 		C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */; };
 		C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */; };
+		C4F93DB71BB9733D002BA943 /* testForManualTrasnition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
+		C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPaskquestionVC.swift; sourceTree = "<group>"; };
+		C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRangeSelectViewController.swift; sourceTree = "<group>"; };
+		C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPGuessSelectWindow.swift; path = ../SPGuessSelectWindow.swift; sourceTree = "<group>"; };
 		C4B52AA61B95EBDB007A8D1C /* WouldYouRather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WouldYouRather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B52AAA1B95EBDB007A8D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +47,9 @@
 		C4B52ABB1B95EBDB007A8D1C /* WouldYouRatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WouldYouRatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B52AC01B95EBDB007A8D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B52AC11B95EBDB007A8D1C /* WouldYouRatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WouldYouRatherTests.swift; sourceTree = "<group>"; };
-		C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController2ViewController.swift; sourceTree = "<group>"; };
 		C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
 		C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUVC.swift; sourceTree = "<group>"; };
+		C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testForManualTrasnition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +93,14 @@
 			children = (
 				C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */,
 				C4B52AAD1B95EBDB007A8D1C /* ViewController.swift */,
-				C4BABC231B97EEE200ED9E9C /* MyViewController2ViewController.swift */,
 				C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */,
 				C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */,
+				C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */,
+				C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */,
+				C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */,
+				C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */,
 				C4B52AAF1B95EBDB007A8D1C /* Main.storyboard */,
+				C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */,
 				C4B52AB21B95EBDB007A8D1C /* Images.xcassets */,
 				C4B52AB41B95EBDB007A8D1C /* LaunchScreen.xib */,
 				C4B52AA91B95EBDB007A8D1C /* Supporting Files */,
@@ -222,10 +234,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B52AAE1B95EBDB007A8D1C /* ViewController.swift in Sources */,
-				C4BABC241B97EEE200ED9E9C /* MyViewController2ViewController.swift in Sources */,
 				C4B52AAC1B95EBDB007A8D1C /* AppDelegate.swift in Sources */,
+				C4F93DB71BB9733D002BA943 /* testForManualTrasnition.swift in Sources */,
 				C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */,
 				C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */,
+				C44AFA721BAB2E14002813C6 /* SPaskquestionVC.swift in Sources */,
+				C44AFA701BAB2646002813C6 /* MPCHandler.swift in Sources */,
+				C4AD96A31BB040BE00587C71 /* SPGuessSelectWindow.swift in Sources */,
+				C4AD96A11BB03B4D00587C71 /* SPRangeSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

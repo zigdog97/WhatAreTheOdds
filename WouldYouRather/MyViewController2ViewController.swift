@@ -10,6 +10,11 @@ import UIKit
 
 class MyViewController2ViewController: UIViewController {
 
+    @IBOutlet weak var NumberRangeMax: UITextField!
+    
+    @IBAction func MaxRangeSendButton(sender: AnyObject) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +25,3 @@ class MyViewController2ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
-}
