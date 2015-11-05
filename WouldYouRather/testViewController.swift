@@ -1,31 +1,17 @@
 //
-//  SPRangeSelectViewController.swift
+//  testViewController.swift
 //  WouldYouRather
 //
-//  Created by zach bundarin on 9/21/15.
+//  Created by zach bundarin on 10/5/15.
 //  Copyright (c) 2015 Zach Bundarin. All rights reserved.
 //
 
 import UIKit
 
-class SPRangeSelectViewController: UIViewController {
-    
-    
-    
-    @IBOutlet weak var UserInputTextFieldSP: UITextField!
-    
-    
-    
-    @IBAction func segButton(sender: AnyObject) {
-    }
-    
-    
-    
+class testViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
 
         // Do any additional setup after loading the view.
     }
@@ -33,16 +19,6 @@ class SPRangeSelectViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    
-    
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        var secondVC: SPAQVC = segue.destinationViewController as! SPAQVC
-        
-        
-        secondVC.receivedString = UserInputTextFieldSP.text
     }
     
 

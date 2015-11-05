@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C40D37D41BCBEB4200AF989E /* SPAQVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40D37D31BCBEB4200AF989E /* SPAQVC.swift */; };
 		C44AFA701BAB2646002813C6 /* MPCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */; };
-		C44AFA721BAB2E14002813C6 /* SPaskquestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */; };
 		C4AD96A11BB03B4D00587C71 /* SPRangeSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */; };
 		C4AD96A31BB040BE00587C71 /* SPGuessSelectWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */; };
 		C4B52AAC1B95EBDB007A8D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */; };
@@ -20,6 +20,9 @@
 		C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */; };
 		C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */; };
 		C4F93DB71BB9733D002BA943 /* testForManualTrasnition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */; };
+		C4FAB33D1BC2AF8600C62970 /* SecondVCCPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAB33C1BC2AF8600C62970 /* SecondVCCPU.swift */; };
+		C4FAB33F1BC2B4F700C62970 /* testViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAB33E1BC2B4F700C62970 /* testViewController.swift */; };
+		C4FAB3411BC6D08900C62970 /* ThirdVCCPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FAB3401BC6D08900C62970 /* ThirdVCCPU.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C40D37D31BCBEB4200AF989E /* SPAQVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPAQVC.swift; sourceTree = "<group>"; };
 		C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCHandler.swift; sourceTree = "<group>"; };
-		C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPaskquestionVC.swift; sourceTree = "<group>"; };
 		C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SPRangeSelectViewController.swift; sourceTree = "<group>"; };
 		C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SPGuessSelectWindow.swift; path = ../SPGuessSelectWindow.swift; sourceTree = "<group>"; };
 		C4B52AA61B95EBDB007A8D1C /* WouldYouRather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WouldYouRather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +53,9 @@
 		C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiplayerVC.swift; sourceTree = "<group>"; };
 		C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CPUVC.swift; sourceTree = "<group>"; };
 		C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testForManualTrasnition.swift; sourceTree = "<group>"; };
+		C4FAB33C1BC2AF8600C62970 /* SecondVCCPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondVCCPU.swift; path = ../SecondVCCPU.swift; sourceTree = "<group>"; };
+		C4FAB33E1BC2B4F700C62970 /* testViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = testViewController.swift; sourceTree = "<group>"; };
+		C4FAB3401BC6D08900C62970 /* ThirdVCCPU.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVCCPU.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,15 +97,18 @@
 		C4B52AA81B95EBDB007A8D1C /* WouldYouRather */ = {
 			isa = PBXGroup;
 			children = (
+				C4FAB33C1BC2AF8600C62970 /* SecondVCCPU.swift */,
+				C4FAB33E1BC2B4F700C62970 /* testViewController.swift */,
 				C4B52AAB1B95EBDB007A8D1C /* AppDelegate.swift */,
 				C4B52AAD1B95EBDB007A8D1C /* ViewController.swift */,
 				C4BABC251B97F4B700ED9E9C /* MultiplayerVC.swift */,
 				C4BABC271B97F5EC00ED9E9C /* CPUVC.swift */,
-				C44AFA711BAB2E14002813C6 /* SPaskquestionVC.swift */,
 				C4F93DB61BB9733D002BA943 /* testForManualTrasnition.swift */,
+				C40D37D31BCBEB4200AF989E /* SPAQVC.swift */,
 				C4AD96A21BB040BE00587C71 /* SPGuessSelectWindow.swift */,
 				C44AFA6F1BAB2646002813C6 /* MPCHandler.swift */,
 				C4B52AAF1B95EBDB007A8D1C /* Main.storyboard */,
+				C4FAB3401BC6D08900C62970 /* ThirdVCCPU.swift */,
 				C4AD96A01BB03B4D00587C71 /* SPRangeSelectViewController.swift */,
 				C4B52AB21B95EBDB007A8D1C /* Images.xcassets */,
 				C4B52AB41B95EBDB007A8D1C /* LaunchScreen.xib */,
@@ -238,10 +247,13 @@
 				C4F93DB71BB9733D002BA943 /* testForManualTrasnition.swift in Sources */,
 				C4BABC281B97F5EC00ED9E9C /* CPUVC.swift in Sources */,
 				C4BABC261B97F4B700ED9E9C /* MultiplayerVC.swift in Sources */,
-				C44AFA721BAB2E14002813C6 /* SPaskquestionVC.swift in Sources */,
+				C40D37D41BCBEB4200AF989E /* SPAQVC.swift in Sources */,
 				C44AFA701BAB2646002813C6 /* MPCHandler.swift in Sources */,
+				C4FAB3411BC6D08900C62970 /* ThirdVCCPU.swift in Sources */,
 				C4AD96A31BB040BE00587C71 /* SPGuessSelectWindow.swift in Sources */,
 				C4AD96A11BB03B4D00587C71 /* SPRangeSelectViewController.swift in Sources */,
+				C4FAB33F1BC2B4F700C62970 /* testViewController.swift in Sources */,
+				C4FAB33D1BC2AF8600C62970 /* SecondVCCPU.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

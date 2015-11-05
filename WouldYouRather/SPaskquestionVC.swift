@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SPaskquestionVC: UIViewController {
+class SPasquestionVC: UIViewController {
 
-    @IBAction func testButton(sender: AnyObject) {
+    @IBAction func testButton(sender: UIButton) {
     }
-   
+
     var receivedString: String =  ""
     @IBOutlet weak var labelToStoreMaxRange: UILabel!
     
@@ -24,6 +24,8 @@ class SPaskquestionVC: UIViewController {
     var buttonItterationCounter = 0
     
     
+    @IBAction func buttonForTransferOfVC(sender: AnyObject?) {
+    }
     
     
     @IBAction func buttonForFirstInput(sender: UIButton) {
@@ -41,12 +43,27 @@ class SPaskquestionVC: UIViewController {
             buttonItterationCounter = 1
             mainTitleForAsk.text    = "Please have your friend enter their guess"
             textEnteryNumGuess.text = ""
-
+            func bringSubviewToFront(testButton: UIView){
+            }
+            func sendSubviewToBack(buttonforFirstInput: UIView){
+                    
+            }
         }
         if buttonItterationCounter == 2 {
-            let TestForManualTransitionVariable = self.storyboard.instantiateViewControllerWithIdentifier("SecondViewControler") as testForManualTrasnition
-            self.presentViewController(
-                testForManualTransition, animated: true, completion: nil)
+            
+            
+            
+            
+            //UIButton *buttonvarforVC = [UIButton buttonWithType: UIButtonTypeRoundedRect];
+            //buttonvarforVC.frame = CGRectMake(0,0,100,50)
+            //buttonvarforVC.alpha = 0;
+            //[self.view .addSubview:buttonvarforVC];
+            //[UIView .animateWithDuration(0.3, animations: ^(void) { buttonvarforVC.alpha = 1; } ),
+            
+            //mainTitleForAsk.text = "Ran"
+            //let TestForManualTransitionVariable = ViewController(nibName: nibName, bundle: nil)
+            //self.presentViewController(TestForManualTransitionVariable, animated: true, completion: nil)
+            //self.navigationController?.pushViewController(TestForManualTransitionVariable, animated: true)
         }
     
 
@@ -68,7 +85,10 @@ class SPaskquestionVC: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var secondVC: SecondVCCPU = segue.destinationViewController as! SecondVCCPU
+        secondVC.recievedString = textEnteryNumGuess.text}
+    }
 
     /*
     // MARK: - Navigation
@@ -80,4 +100,4 @@ class SPaskquestionVC: UIViewController {
     }
     */
 
-}
+
