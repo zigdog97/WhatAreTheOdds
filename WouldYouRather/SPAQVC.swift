@@ -12,6 +12,7 @@ class SPAQVC: UIViewController {
     
     var globalUserTwoGuess: String = ""
     var globalUserOneGuess: String = ""
+    var readyToSeg: Bool = false
     
     
     @IBAction func testButton(sender: UIButton) {
@@ -37,6 +38,7 @@ class SPAQVC: UIViewController {
     
     func isInRange(guess: String) -> Bool {
         if guess.toInt() > receivedString.toInt() {
+            maxRangeWarningText.text = "Please pick a number within range!"
             maxRangeWarningText.hidden = false
             return false
         }
@@ -44,45 +46,29 @@ class SPAQVC: UIViewController {
     }
     
     @IBAction func buttonForFirstInput(sender: UIButton) {
+        if textEnteryNumGuess.text != "" {
+            if isInRange(textEnteryNumGuess.text) == true {
+                if buttonItterationCounter == 1 {
+                    globalUserOneGuess = textEnteryNumGuess.text
+                    //buttonForFirstInput.hidden = true
+                    textEnteryNumGuess.text = ""
+                    readyToSeg = true
+                }
+            
         
-        if isInRange(textEnteryNumGuess.text) == true {
-            if buttonItterationCounter == 1 {
-                globalUserOneGuess = textEnteryNumGuess.text
-                buttonForFirstInput.hidden = true
-                textEnteryNumGuess.text = ""
+        
+        
+                if buttonItterationCounter == 0 {
+                    globalUserTwoGuess = textEnteryNumGuess.text
+                    buttonItterationCounter = 1
+                    mainTitleForAsk.text    = "Please have your friend enter their guess"
+                    textEnteryNumGuess.text = ""
+                }
             }
-        
-        
-        
-            if buttonItterationCounter == 0 {
-                globalUserTwoGuess = textEnteryNumGuess.text
-                buttonItterationCounter = 1
-                mainTitleForAsk.text    = "Please have your friend enter their guess"
-                textEnteryNumGuess.text = ""
-            }
+        } else {
+            maxRangeWarningText.text = "Please enter a number!"
+            maxRangeWarningText.hidden = false
         }
-        
-            
-        
-            
-            
-            
-            
-            
-            
-            
-            //UIButton *buttonvarforVC = [UIButton buttonWithType: UIButtonTypeRoundedRect];
-            //buttonvarforVC.frame = CGRectMake(0,0,100,50)
-            //buttonvarforVC.alpha = 0;
-            //[self.view .addSubview:buttonvarforVC];
-            //[UIView .animateWithDuration(0.3, animations: ^(void) { buttonvarforVC.alpha = 1; } ),
-            
-            //mainTitleForAsk.text = "Ran"
-            //let TestForManualTransitionVariable = ViewController(nibName: nibName, bundle: nil)
-            //self.presentViewController(TestForManualTransitionVariable, animated: true, completion: nil)
-            //self.navigationController?.pushViewController(TestForManualTransitionVariable, animated: true)
-        
-        
         
     }
     
@@ -95,10 +81,25 @@ class SPAQVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    
+    override func shouldPerformSegueWithIdentifier(identifier: String!,
+        sender: AnyObject!) -> Bool {
+            if readyToSeg == true{
+                return true
+            }
+            return false
+    }
+    
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var testForManualTransitionSegue: testForManualTrasnition = segue.destinationViewController as! testForManualTrasnition
         //testForManualTransitionSegue.recevedStringForPlayerTwo = playerTwoGuessNumber.text

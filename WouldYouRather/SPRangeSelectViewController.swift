@@ -11,6 +11,7 @@ import UIKit
 class SPRangeSelectViewController: UIViewController {
     
     
+    @IBOutlet weak var warningLabel: UILabel!
     
     @IBOutlet weak var UserInputTextFieldSP: UITextField!
     
@@ -24,6 +25,7 @@ class SPRangeSelectViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        warningLabel.hidden = true
         
         
 
@@ -36,7 +38,21 @@ class SPRangeSelectViewController: UIViewController {
     }
     
     
-    
+    override func shouldPerformSegueWithIdentifier(identifier: String!,
+        sender: AnyObject!) -> Bool {
+            if UserInputTextFieldSP.text != "" {
+                if UserInputTextFieldSP.text.toInt() > 1000 {
+                    warningLabel.text = "Cannot set limit above 1000! :("
+                    warningLabel.hidden = false
+                    return false 
+                }
+            } else {
+                warningLabel.hidden = false
+                warningLabel.text = "Please enter a number range!"
+                return false
+            }
+            return true
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         var secondVC: SPAQVC = segue.destinationViewController as! SPAQVC

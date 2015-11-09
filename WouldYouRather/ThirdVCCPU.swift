@@ -54,7 +54,7 @@ class ThirdVCCPU: UIViewController {
         } else {
             winCondition.text = "The numbers are different! You got lucky!"
             winCondition.hidden = false
-        }
+        }                
         
         
     }
