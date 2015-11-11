@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:WouldYouRather.xcodeproj">
+      location = "self:/Users/HeroZig/Desktop/WouldYouRather/WouldYouRather.xcodeproj">
    </FileRef>
 </Workspace>

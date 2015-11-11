@@ -44,7 +44,7 @@ class ThirdVCCPU: UIViewController {
         PlayerGuessLabel.text = secondRecievedString
 
         RangeDisplayThirdVCCPU.text = "The Range was 1 to \(rangeRecievedString)."
-        var pGuess = PlayerGuessLabel.text!.toInt()!
+            var pGuess = PlayerGuessLabel.text!.toInt()!
         var CPUGuess = CPUGuessLabel.text!.toInt()!
         print("pGuess/CPUGuess = \(pGuess)")
         print(",\(CPUGuess)")

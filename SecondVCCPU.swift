@@ -40,6 +40,11 @@ class SecondVCCPU: UIViewController {
     
     override func shouldPerformSegueWithIdentifier(identifier: String!,
         sender: AnyObject!) -> Bool {
+            if GuessNumberInput.text == ""{
+                numberRangeLimitWarning.hidden = false
+                numberRangeLimitWarning.text = "Please enter a number"
+                return false
+            }
             if GuessNumberInput.text.toInt() > recievedString.toInt() {
                 numberRangeLimitWarning.hidden = false
                 return false
