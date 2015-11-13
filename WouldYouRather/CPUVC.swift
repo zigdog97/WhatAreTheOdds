@@ -9,7 +9,6 @@
 import UIKit
 
 class CPUVC: UIViewController, UITextFieldDelegate {
-    
     @IBOutlet weak var warningLabel: UILabel!
     @IBOutlet weak var dareQuestion: UILabel!
 
@@ -58,8 +57,8 @@ class CPUVC: UIViewController, UITextFieldDelegate {
     override func shouldPerformSegueWithIdentifier(identifier: String!,
         sender: AnyObject!) -> Bool {
             if RangeInputToTextField.text != "" {
-                if RangeInputToTextField.text.toInt() > 1000 {
-                    warningLabel.text = "Cannot set limit above 1000! :("
+                if RangeInputToTextField.text.toInt()! > 1000 || RangeInputToTextField.text.toInt()! < 1{
+                    warningLabel.text = "Please set limit between 1-1000!"
                     warningLabel.hidden = false
                     return false
                 }

@@ -45,7 +45,7 @@ class SecondVCCPU: UIViewController {
                 numberRangeLimitWarning.text = "Please enter a number"
                 return false
             }
-            if GuessNumberInput.text.toInt() > recievedString.toInt() {
+            if GuessNumberInput.text.toInt() > recievedString.toInt() || GuessNumberInput.text.toInt() < 1 {
                 numberRangeLimitWarning.hidden = false
                 return false
             }

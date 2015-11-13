@@ -33,22 +33,21 @@ class ThirdVCCPU: UIViewController {
     override func viewDidLoad() {
         winCondition.hidden = true
         var rangeInt: Int = rangeRecievedString.toInt()!
-        print("range int =\(rangeInt)   ")
-        CPUGuessLabel.text = String(arc4random_uniform(UInt32(rangeInt)+1))
-        if CPUGuessLabel.text?.toInt() == 0 {
-            CPUGuessLabel.text = String(CPUGuessLabel.text!.toInt()!+1)
+        var intToUse = arc4random_uniform(UInt32(rangeInt)+1)
+        if intToUse == 0 {
+            intToUse++
+            CPUGuessLabel.text = "cpu guess:\(String(intToUse))"
+        } else {
+            CPUGuessLabel.text = "cpu guess:\(intToUse)"
         }
         DareLabel.text = segueDareLabel
         
         super.viewDidLoad()
-        PlayerGuessLabel.text = secondRecievedString
+        PlayerGuessLabel.text = "Your guess:\(secondRecievedString)"
 
         RangeDisplayThirdVCCPU.text = "The Range was 1 to \(rangeRecievedString)."
-            var pGuess = PlayerGuessLabel.text!.toInt()!
-        var CPUGuess = CPUGuessLabel.text!.toInt()!
-        print("pGuess/CPUGuess = \(pGuess)")
-        print(",\(CPUGuess)")
-        if pGuess == CPUGuess {
+        
+        if secondRecievedString.toInt() == String(intToUse).toInt() {
             winCondition.text = "The numbers are the same! Do the dare!"
             winCondition.hidden = false
         } else {
